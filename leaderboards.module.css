@@ -1,0 +1,126 @@
+.chooseContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.gameContainer>button{
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: "Pixel", monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+}
+
+.chooseContainer>div {
+  margin: 1rem;
+}
+
+.logoContainer {
+  margin: 0.125rem 2rem;
+  height: 1rem;
+  width: auto;
+  padding-bottom: 0.375rem;
+  
+}
+
+.logoContainer>button{
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: "Pixel", monospace;
+  font-size: 22px;
+}
+
+.logoContainer>button>img {
+  height: 25px;
+  width: auto;
+  
+}
+
+.logoContainer>button>img:hover {
+  cursor: pointer;
+}
+
+.opaque {
+  opacity: 0.5;
+  transition: opacity 0.25s;
+}
+
+.locations_switch__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 2px solid #FFFFFF;
+  padding: 10px 20px 10px 20px;
+}
+
+.bk__container input:checked{
+  background-color: var(--neon-blue);
+  border-color: var(--neon-blue);
+}
+
+.atl__container input:checked {
+  background-color: var(--neon-pink);
+  border-color: var(--neon-pink);
+}
+
+.dc__container input:checked {
+  background-color: var(--neon-green);
+  border-color: var(--neon-green);
+}
+
+.locations_switch__container label {
+  color: #FFFFFF;
+  font-family: 'Pixel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logoContainer {
+    height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .logoContainer {
+    height: calc(1.5rem * 1.5);
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .gameContainer {
+    flex-direction: column;
+  }
+
+  .gameContainer>button{
+    font-size: 25px;
+  }
+
+  .locations_switch__container{
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gameContainer>button {
+    font-size: 18px;
+  }
+}
